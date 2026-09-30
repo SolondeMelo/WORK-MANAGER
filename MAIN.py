@@ -1,9 +1,9 @@
 """
-Gestor de Trampos - Aplicativo para freelancers controlarem seus trabalhos,
+Gestor de Trampos - Aplicativo para trabalhadores autônomos controlarem seus trabalhos,
 diárias e valores recebidos.
 
 Como rodar:
-    python3 freelancer_app.py
+    python3 MAIN.py
 
 Dependências:
     - tkinter (geralmente já vem com o Python; no Linux pode precisar de
