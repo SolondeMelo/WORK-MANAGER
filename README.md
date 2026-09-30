@@ -12,9 +12,9 @@ GESTOR DE TRAMPOS - INSTRUÇÕES
 
 3) COMO RODAR
    Abra o terminal/prompt de comando na pasta onde está o arquivo
-   "freelancer_app.py" e digite:
-         python3 freelancer_app.py
-   (no Windows pode ser apenas "python freelancer_app.py")
+   "MAIN.py" e digite:
+         python3 MAIN.py
+   (no Windows pode ser apenas "python MAIN.py")
 
 4) SEUS DADOS
    Tudo que você cadastrar fica salvo automaticamente em um arquivo
@@ -40,6 +40,3 @@ GESTOR DE TRAMPOS - INSTRUÇÕES
      trabalho no futuro.
    - No topo do menu, o "Dashboard" (nome editável) mostra o total já
      recebido e o total ainda a receber dos trabalhos em andamento.
-
-Qualquer ajuste que quiser (cores, campos extras, exportar para Excel,
-etc.) é só pedir!
