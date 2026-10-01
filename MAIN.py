@@ -1,5 +1,5 @@
 """
-Gestor de Trampos - Aplicativo para trabalhadores autônomos controlarem seus trabalhos,
+Work Manager - Aplicativo para trabalhadores autônomos controlarem seus trabalhos,
 diárias e valores recebidos.
 
 Como rodar:
@@ -315,7 +315,7 @@ class CalendarioPopup(tk.Toplevel):
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Gestor de Trampos")
+        self.title("Work Manager")
         self.geometry("1000x640")
         self.minsize(860, 560)
         self.configure(bg=COR_FUNDO)
@@ -336,7 +336,7 @@ class App(tk.Tk):
         topo.pack(side="top", fill="x")
         topo.pack_propagate(False)
 
-        tk.Label(topo, text="Gestor de Trampos", bg=COR_CARD, fg=COR_TEXTO,
+        tk.Label(topo, text="Work Manager", bg=COR_CARD, fg=COR_TEXTO,
                   font=FONTE_TITULO).pack(side="left", padx=20)
 
         self.foto_label = tk.Label(topo, bg=COR_CARD, cursor="hand2")
