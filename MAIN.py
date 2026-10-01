@@ -594,7 +594,7 @@ class App(tk.Tk):
                       font=("Segoe UI", 20, "bold")).pack(anchor="w", padx=16)
 
         card_valor("Total recebido", self.db.total_recebido(), COR_VERDE)
-        card_valor("A receber (trabalhos em andamento)", self.db.total_a_receber(), COR_ACCENT)
+        card_valor("A receber", self.db.total_a_receber(), COR_ACCENT)
 
         resumo = self._card()
         resumo.pack(fill="x", padx=24, pady=24)
@@ -631,7 +631,7 @@ class App(tk.Tk):
 
         trabalhos = self.db.listar_trabalhos(finalizado=False)
         if not trabalhos:
-            tk.Label(self.conteudo, text="Nenhum trabalho em andamento ainda.",
+            tk.Label(self.conteudo, text="Nenhum trabalho ainda.",
                       bg=COR_FUNDO, fg=COR_SIDEBAR_TEXTO_SEC, font=FONTE_PADRAO).pack(
                 anchor="w", padx=24)
             return
@@ -719,7 +719,7 @@ class App(tk.Tk):
             anchor="w", padx=24, pady=(8, 20))
 
         if not finalizado:
-            tk.Button(self.conteudo, text="✅ Finalizar Trampo", bg=COR_VERDE, fg="white",
+            tk.Button(self.conteudo, text="✅ Finalizar", bg=COR_VERDE, fg="white",
                        relief="flat", font=("Segoe UI", 11, "bold"), padx=16, pady=8,
                        command=lambda: self._finalizar_trabalho(trabalho_id)).pack(
                 anchor="w", padx=24, pady=(0, 24))
@@ -769,7 +769,7 @@ class App(tk.Tk):
     def _finalizar_trabalho(self, trabalho_id):
         total = self.db.total_trabalho(trabalho_id)
         if messagebox.askyesno(
-            "Finalizar Trampo",
+            "Finalizar",
             f"Confirmar recebimento total de {formatar_moeda(total)} e mover este "
             "trabalho para 'Trabalhos Finalizados'?"
         ):
