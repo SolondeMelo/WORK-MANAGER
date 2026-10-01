@@ -1,4 +1,4 @@
-GESTOR DE TRAMPOS - INSTRUÇÕES
+Work Manager - INSTRUÇÕES
 ================================
 
 1) REQUISITOS
