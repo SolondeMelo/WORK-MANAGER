@@ -23,7 +23,7 @@ GESTOR DE TRAMPOS - INSTRUÇÕES
    copiar esse arquivo para outro lugar.
 
 5) COMO USAR
-   - Clique no lápis ✏️ ao lado do nome no topo do menu para renomear
+   - Clique no lápis ao lado do nome no topo do menu para renomear
      seu espaço (a aba com nome editável).
    - Em "Diárias", defina o valor padrão que você ganha por dia.
    - Em "Trabalhos", clique em "+ Novo Trabalho" e dê um nome a ele.
@@ -33,7 +33,7 @@ GESTOR DE TRAMPOS - INSTRUÇÕES
      recebido naquele dia (já vem preenchido com sua diária padrão, mas
      pode alterar se ganhou mais ou menos naquele dia específico).
    - O valor total a receber daquele trabalho é atualizado automaticamente.
-   - Quando receber o pagamento combinado, clique em "✅ Finalizar Trampo".
+   - Quando receber o pagamento combinado, clique em " Finalizar Trampo".
      O trabalho sai da lista de "em andamento" e vai para a aba
      "Trabalhos Finalizados", onde você também pode clicar em
      "Ver histórico" para consultar todos os dias e valores daquele
