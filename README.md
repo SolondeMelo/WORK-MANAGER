@@ -1,28 +1,28 @@
-Work Manager - INSTRUÇÕES
+**Work Manager - INSTRUÇÕES**
 ================================
 
-1) REQUISITOS
+1) **REQUISITOS**
    - Python 3 instalado no seu computador (Windows, Mac ou Linux).
    - No Linux, se der erro de "tkinter" faltando, rode:
          sudo apt install python3-tk
 
-2) (RECOMENDADO) Instalar o Pillow para poder usar sua foto de perfil:
+2) *(RECOMENDADO)* Instalar o Pillow para poder usar sua foto de perfil:
          pip install Pillow
    Sem o Pillow o programa funciona normalmente, só não mostra a foto.
 
-3) COMO RODAR
+3) **COMO RODAR**
    Abra o terminal/prompt de comando na pasta onde está o arquivo
    "MAIN.py" e digite:
          python3 MAIN.py
    (no Windows pode ser apenas "python MAIN.py")
 
-4) SEUS DADOS
+4) **SEUS DADOS**
    Tudo que você cadastrar fica salvo automaticamente em um arquivo
    chamado "dados_freelancer.db", criado do lado do script. Não apague
    esse arquivo ou você perderá o histórico. Para fazer backup, basta
    copiar esse arquivo para outro lugar.
 
-5) COMO USAR
+5) **COMO USAR**
    - Clique no lápis ao lado do nome no topo do menu para renomear
      seu espaço (a aba com nome editável).
    - Em "Diárias", defina o valor padrão que você ganha por dia.
