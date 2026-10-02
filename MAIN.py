@@ -653,7 +653,7 @@ class App(tk.Tk):
                        ).pack(side="right", padx=16)
 
     def criar_novo_trabalho(self):
-        nome = simpledialog.askstring("Novo trabalho", "Nome do trabalho/trampo:", parent=self)
+        nome = simpledialog.askstring("Novo trabalho", "Nome do trabalho:", parent=self)
         if nome and nome.strip():
             novo_id = self.db.criar_trabalho(nome.strip())
             self.atualizar_sidebar()
