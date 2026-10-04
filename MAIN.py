@@ -208,7 +208,7 @@ class Banco:
 
 
 # ---------------------------------------------------------------------------
-# Mini calendário clicável (não precisa digitar a data)
+# calendário clicável
 # ---------------------------------------------------------------------------
 class CalendarioPopup(tk.Toplevel):
     DIAS_SEMANA = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"]
@@ -304,7 +304,7 @@ class App(tk.Tk):
         self.configure(bg=COR_FUNDO)
 
         self.db = Banco(DB_PATH)
-        self._foto_tk = None  # referência viva da imagem (evita garbage collector)
+        self._foto_tk = None  # referência viva da imagem
 
         self._montar_layout_base()
         self.atualizar_sidebar()
@@ -339,7 +339,7 @@ class App(tk.Tk):
         container_conteudo = tk.Frame(corpo, bg=COR_FUNDO)
         container_conteudo.pack(side="left", fill="both", expand=True)
 
-        # canvas com scrollbar para o conteúdo (telas podem crescer)
+        # canvas com scrollbar para o conteúdo
         self.canvas = tk.Canvas(container_conteudo, bg=COR_FUNDO, highlightthickness=0)
         scrollbar = ttk.Scrollbar(container_conteudo, orient="vertical", command=self.canvas.yview)
         self.conteudo = tk.Frame(self.canvas, bg=COR_FUNDO)
@@ -484,7 +484,7 @@ class App(tk.Tk):
         atualizar_preview()
 
     # ------------------------------------------------------------------
-    # Sidebar (menu esquerdo)
+    # Sidebar
     # ------------------------------------------------------------------
     def atualizar_sidebar(self):
         for w in self.sidebar.winfo_children():
@@ -643,7 +643,7 @@ class App(tk.Tk):
             self.mostrar_detalhe_trabalho(novo_id)
 
     # ------------------------------------------------------------------
-    # Tela: Detalhe de um trabalho específico ("aba personalizada")
+    # Tela: Detalhe de um trabalho específico
     # ------------------------------------------------------------------
     def mostrar_detalhe_trabalho(self, trabalho_id):
         self._limpar_conteudo()
