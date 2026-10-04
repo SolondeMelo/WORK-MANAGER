@@ -1,20 +1,3 @@
-"""
-Work Manager - Aplicativo para trabalhadores autônomos controlarem seus trabalhos,
-diárias e valores recebidos.
-
-Como rodar:
-    python3 MAIN.py
-
-Dependências:
-    - tkinter (geralmente já vem com o Python; no Linux pode precisar de
-      "sudo apt install python3-tk")
-    - Pillow (opcional, recomendado, para exibir sua foto de perfil):
-      pip install Pillow
-
-Os dados ficam salvos em um arquivo "dados_freelancer.db" (SQLite) na
-mesma pasta deste script, então eles persistem entre uma execução e outra.
-"""
-
 import os
 import sqlite3
 import calendar
